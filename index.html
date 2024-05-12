@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Platzi Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Sklep</h1>
+        <button id="cartButton">Koszyk</button>
+        <button id="themeButton">Zmień motyw</button>
+    </header>
+    <div class="container">
+
+        <div class="filters">
+            <div class="categories" id="categoryButtons"></div>
+            <h2>Zakres cenowy:</h2>
+            <div class="price-range">
+                <label for="price">Zakres cenowy:</label>
+                <input type="range" id="price" min="0" max="100" value="100">
+                <span id="priceValue">$0 - $100</span>
+            </div>
+            <div class="search">
+                <label for="search">Wyszukaj produkt:</label>
+                <input type="text" id="search" placeholder="Nazwa produktu">
+                <button id="searchButton">Szukaj</button>
+            </div>
+        </div>
+
+        <div class="products" id="productList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
